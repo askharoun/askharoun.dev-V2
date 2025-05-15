@@ -26,13 +26,6 @@ const games = [
     description: "Arrange falling blocks to create complete lines that clear from the board.",
     controls: "Arrow keys or WASD to move/rotate, D for hard drop, Space to pause, R to reset",
   },
-  {
-    id: 3,
-    name: "Car Racing",
-    component: CarRacingGame,
-    description: "Dodge oncoming traffic and survive as long as possible.",
-    controls: "Left/Right arrows or A/D to move, Space to pause, R to reset",
-  },
 ]
 
 export default function GamesVault() {
@@ -138,14 +131,6 @@ export default function GamesVault() {
                   opacity="0.3"
                 />
               </svg>
-
-              {/* Almost invisible button */}
-              <div className="w-8 h-8 rounded-full bg-transparent border border-cyan-500/10 flex items-center justify-center overflow-hidden">
-                <div className="w-2 h-2 rounded-full bg-cyan-500/30"></div>
-              </div>
-            </motion.button>
-          </motion.div>
-        )}
       </AnimatePresence>
 
       {/* Vault Modal */}
